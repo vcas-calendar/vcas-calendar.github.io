@@ -3,6 +3,7 @@
 	"name": "@vcas-calendar/vcas-calendar.github.io",
 	"type": "module",
 	"dependencies": {
+		"js-yaml": "^4.1.0",
 		"lit": "^2.2.8"
 	},
 	"devDependencies": {

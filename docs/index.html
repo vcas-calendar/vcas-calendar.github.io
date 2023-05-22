@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="icon" href="./images/favicon.png" />
+    <title>バーチャルキャストイベントカレンダー</title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="バーチャルキャストイベントカレンダー" />
+    <meta name="twitter:description" content="有志製作のバーチャルキャストに関する予定を公開するための共有カレンダー(公認)です。ライブ配信に限らず、だれでも予定登録できます。" />
+    <meta name="twitter:image" content="https://vcas-calendar.github.io/images/twitter-image.jpg" />
+    <meta name="twitter:image:alt" content="" />
+    <meta name="twitter:site:id" content="319757037" />
+    <meta name="viewport" content="width=750" />
+    <link rel="stylesheet" href="./styles.css" />
+	<script type="module" src="./scripts/index.js"></script>
+	<script type="module" src="./scripts/scripts.js"></script>
+</head>
+<body>
+
+<header>
+    <details open="">
+        <summary>メニュー</summary>
+        <nav>
+            <ul>
+                <li><a href="#about">カレンダーについて</a></li>
+                <li><a href="#form">予定の登録</a></li>
+                <li><a rel="external" href="https://pokemori.booth.pm/items/1369294" target="_blank">ポスターカレンダー</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <ul>
+                <li><a rel="external" href="https://twitter.com/vcas_calendar" target="_blank"><img src="./images/Twitter_Social_Icon_Square_Color.svg" alt="Twitter" />広報アカウント</a></li>
+                <li><a rel="external" href="https://twitter.com/vcasCal" target="_blank"><img src="./images/Twitter_Social_Icon_Square_Color.svg" alt="Twitter" />新着/直前通知bot</a></li>
+                <li><a rel="external" href="https://virtualcast.jp/" target="_blank">バーチャルキャスト</a></li>
+            </ul>
+        </nav>
+    </details>
+    <h1><img src="./images/title-logo.png" alt="バーチャルキャストイベントカレンダー" /></h1>
+    <p><a href="#form">予定の登録</a></p>
+</header>
+
+<main>
+
+<section>
+    <iframe src="https://calendar.google.com/calendar/embed?src=v4hhfbk90aur93dhddd5dmie4g@group.calendar.google.com&amp;ctz=Asia/Tokyo&amp;showTitle=0&amp;wkst=1&amp;showPrint=0&amp;showCalendars=0"></iframe>
+</section>
+
+<section id="about">
+    <h1>バーチャルキャストイベントカレンダーについて</h1>
+    <p>有志によって製作された、バーチャルキャストに関する予定を公開するための共有カレンダー (公認) です。</p>
+    <p>ライブ配信に限らず、集会や企画の応募締め切りなど、なんでも自由に登録できます。</p>
+    <p>権限などは必要なく、だれでも予定の登録は可能なので、ぜひご活用ください。</p>
+</section>
+
+<section id="form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZGdIqno49wfQqbJy-GGmon1S-Xcx6rJBAIP-mhHJh8n2Q5w/viewform?embedded=true" width="640" height="1300"></iframe>
+</section>
+
+</main>
+
+<footer>
+    <address id="contact">
+        <h1>お問い合わせ</h1>
+        <p>意見や要望などがあれば、
+            <a rel="external" href="https://discordapp.com/invite/NmC2zf6" target="_blank">バーチャルキャスト非公式Discordの「#カレンダーについて」チャンネル</a>
+            へどうぞ。
+            カレンダーの編集権限については、ピン留めされたメッセージをご参照ください。</p>
+    </address>
+
+    <address id="staff">
+        <h1>運営スタッフ</h1>
+        <staff-list></staff-list>
+    </address>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+@namespace url("http://www.w3.org/1999/xhtml");
+
+@font-face {
+	/*
+	 * Font Awesome 4.7.0 by @davegandy - https://fontawesome.com/?from=io - @fontawesome
+     * License - https://fontawesome.com/license?from=io (Font: SIL OFL 1.1, CSS: MIT License)
+     */
+	font-family: "FontAwesome";
+	src: local("FontAwesome"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2");
+}
+
+body {
+	color: #111111;
+	background: whitesmoke;
+	line-height: 1.6;
+	margin: unset;
+}
+
+a {
+	color: mediumblue;
+}
+
+a:hover {
+	color: royalblue;
+}
+
+[target="_blank"]::after {
+	font-family: FontAwesome;
+	content: "\00A0\f08e";
+	font-weight: bold;
+}
+
+main a:link {
+	color: mediumblue;
+}
+
+main a:link:hover {
+	color: royalblue;
+}
+
+iframe {
+	border: unset;
+}
+
+header nav,
+footer {
+	color: whitesmoke;
+}
+
+header a,
+footer p a,
+footer li a {
+	color: inherit;
+}
+
+header a:hover,
+footer p a:hover {
+	color: lightgrey;
+}
+
+small {
+	color: dimgrey;
+	display: block;
+}
+
+small::before {
+	content: "※";
+}
+
+main small {
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+/*====================================
+	ヘッダー
+*/
+header {
+	background:
+		radial-gradient(gainsboro 20%, transparent 30%) 0 0/0.375em 0.25em,
+		radial-gradient(gainsboro 20%, transparent 30%) 0.1875em 0.125em/0.375em 0.25em,
+		whitesmoke;
+	display: grid;
+	grid-template:
+		"nav nav "
+		"h1  form" 4.5em
+		/ min-content auto;
+
+	box-shadow: 0 0.15em 0.15em grey;
+	position: relative;
+	z-index: 1;
+}
+
+/*------------------------------------
+	メニュー
+*/
+header details {
+	grid-area: nav;
+}
+
+header summary {
+	display: none;
+}
+
+header nav {
+	font-size: 0.8em;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5em;
+	box-sizing: border-box;
+	background: #2E2E2E;
+}
+
+header nav ul {
+	list-style: none;
+	padding-left: 2em;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: unset;
+}
+
+header nav li {
+	padding: 0 0.6em;
+	position: relative;
+}
+
+header nav ul:first-of-type li:not(:first-of-type) {
+	border-left: solid #CCCCCC 0.1em;
+}
+
+header nav a {
+	display: flex;
+	padding: 0 0.1em;
+	border-radius: 0.2em;
+	align-items: center;
+}
+
+header nav [href^="https://twitter.com/"] {
+	text-decoration: unset;
+	font-weight: bold;
+	background: #1DA1F2;
+	padding-right: 0.2em;
+}
+
+[alt="Twitter"] {
+	height: 1.6em;
+}
+
+/*------------------------------------
+	タイトル
+*/
+header h1 {
+	grid-area: h1;
+	margin: unset;
+	padding: 0.3em 1em 0.2em;
+}
+
+header h1 img {
+	height: 100%;
+}
+
+/*------------------------------------
+	予定の登録リンク
+*/
+header p {
+	grid-area: form;
+	display: flex;
+	align-items: center;
+	justify-self: right;
+	margin: 0 1em 0 0;
+}
+
+header p a {
+	font-size: 2em;
+	text-decoration: unset;
+	color: whitesmoke;
+	background: lightseagreen;
+	border: lightseagreen solid 0.1em;
+	border-radius: 0.2em;
+	display: block;
+	padding: 0 1em;
+	text-align: center;
+}
+
+header p a::before {
+	font-family: FontAwesome;
+	content: "\f040";
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-right: 0.1em;
+}
+
+header p a:hover {
+	color: lightseagreen;
+	background: whitesmoke;
+}
+
+/*====================================
+	メイン
+*/
+main p {
+	text-indent: 1em;
+}
+
+#about h1::before,
+#poster section h1::before {
+	font-family: FontAwesome;
+	content: "\f12e";
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-right: 0.1em;
+}
+
+#about,
+#poster {
+	padding: 0.5em;
+	background: whitesmoke;
+	border: inset 0.1em dimgray;
+	box-shadow: lightgrey 0 0 0 1em;
+	max-width: 45em;
+	margin: 3em auto;
+}
+
+/*====================================
+	Googleカレンダー
+*/
+[src^="https://calendar.google.com/"] {
+	width: 100%;
+	height: 38em;
+}
+
+/*====================================
+	カレンダーについて
+*/
+#about h1 {
+	margin: unset;
+}
+
+/*====================================
+	登録フォーム
+*/
+#form iframe {
+	width: 100%;
+}
+
+/*====================================
+	フッター
+*/
+footer {
+	color: whitesmoke;
+	background: #242424;
+	display: flex;
+	padding-left: 20em;
+}
+
+address {
+	font-style: inherit;
+	width: 20em;
+	margin-left: 3em;
+}
+
+address h1 {
+	font-size: 1.2em;
+	font-weight: inherit;
+	position: relative;
+	margin: 2em 0;
+}
+
+address h1::after {
+	content: "";
+	display: block;
+	background: whitesmoke;
+	width: 1.8em;
+	height: 0.25em;
+	position: absolute;
+	left: 0;
+	bottom: -0.6em;
+}
+
+/*====================================
+	表示領域が狭い場合
+*/
+@media (max-width: 65em), (max-device-width: 65em) {
+	/*------------------------------------
+		ヘッダー
+	*/
+	header nav ul {
+		padding-left: unset;
+	}
+
+	/*------------------------------------
+		フッター
+	*/
+	footer {
+		justify-content: end;
+		padding-left: unset;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 54em) and (max-width: 65em), (min-device-width: 54em) and (max-device-width: 65em) {
+	/*------------------------------------
+		ヘッダー
+	*/
+	header nav ul:first-of-type li:nth-of-type(2) {
+		display: none;
+	}
+}
+
+/*====================================
+	モバイル向けレイアウト
+*/
+@media (max-width: 54em), (max-device-width: 54em) {
+	/*------------------------------------
+		ヘッダー
+	*/
+	header {
+		grid-template:
+			"h1  form" 3em
+			"nav nav ";
+
+		background: #2E2E2E;
+	}
+
+	header summary {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: -100em;
+		overflow: hidden;
+		width: 3em;
+		height: 3em;
+	}
+
+	header summary::before,
+	header summary::after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0.8em;
+		right: 0.8em;
+		cursor: pointer;
+		border-color: whitesmoke;
+		border-width: 0.1em;
+		z-index: 3;
+	}
+
+	header summary::before {
+		border-top-style: solid;
+		border-bottom-style: solid;
+		top: 0.8em;
+		bottom: 0.8em;
+	}
+
+	header summary::after {
+		border-top-style: solid;
+		top: 50%;
+	}
+
+	header nav li {
+		font-size: 1.5em;
+		margin: 1em;
+		border: unset !important;
+	}
+
+	header nav li:first-of-type {
+		margin-top: 0;
+	}
+
+	header h1 {
+		color: whitesmoke;
+		padding: 0 0 0 1.5em;
+		display: flex;
+		align-items: center;
+	}
+
+	header h1 img {
+		width: 5.8em;
+		height: unset;
+	}
+
+	header p a {
+		font-size: 1em;
+		font-weight: bold;
+		padding: 0 0.1em;
+	}
+
+	header nav {
+		display: unset;
+	}
+
+	header nav ul {
+		display: unset;
+	}
+
+	header nav a {
+		display: inline-flex;
+	}
+}
