@@ -5,7 +5,7 @@ export default {
 	appIndex: 'index.html',
 	nodeResolve: true,
 	esbuildTarget: 'auto',
-	port: 63672,
+	port: 57385,
 	middleware: [
 		function (context, next) {
 			if (!context.url.startsWith('/__') && !context.url.startsWith('/node_modules/')) {

@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"name": "@esperecyan/web-site-private-template",
+	"name": "@vcas-calendar/vcas-calendar.github.io",
 	"type": "module",
 	"dependencies": {
 		"lit": "^2.2.8"
