@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"editorconfig.editorconfig",
+		"pflannery.vscode-versionlens",
+		"dbaeumer.vscode-eslint",
+		"runem.lit-plugin"
+	]
+}

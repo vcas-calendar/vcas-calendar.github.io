@@ -1,0 +1,21 @@
+{
+	"private": true,
+	"name": "@esperecyan/web-site-private-template",
+	"type": "module",
+	"dependencies": {
+		"lit": "^2.2.8"
+	},
+	"devDependencies": {
+		"@esperecyan/eslint-config": "^2.3.0",
+		"@web/dev-server": "^0.2.1",
+		"@web/dev-server-esbuild": "^0.4.1",
+		"eslint": "^8.32.0",
+		"eslint-plugin-lit": "^1.8.2",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	},
+	"scripts": {
+		"start": "web-dev-server",
+		"build": "webpack"
+	}
+}
